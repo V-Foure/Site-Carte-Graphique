@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+  margin:0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* Barre de navigation */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px;
+    transition: all 0.4s ease;
+  }
+  nav.sticky{
+    padding: 15px 20px;
+    background: #7cee7c;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  nav .nav-content{
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .logo a{
+    font-weight: 500px;
+    font-size: 5px;
+    color: #030303;
+  }
+  nav.sticky .logo a{
+    color: rgb(167, 161, 161);
+  }
+  .nav-content .nav-links{
+    display: flex;
+  }
+  .nav-content .nav-links li{
+    list-style: none;
+    margin: 0 8px;
+  }
+   .nav-links li a{
+    text-decoration: none;
+    color: #080808;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 4px;
+    transition: all 0.3s ease;
+  }
+   .nav-links li a:hover{
+     color: #000000;
+   }
+   nav.sticky .nav-links li a{
+     color: rgb(168, 168, 168);
+     transition: all 0.4s ease;
+  }
+   nav.sticky .nav-links li a:hover{
+    color: #0E2431;
+  }
+  .home{
+    height: 15vh;
+    width: 100%;
+ }
+  
+  h2{
+    font-size: 30px;
+    margin-bottom: 6px;
+    color: #030303;
+  }
+  .text{
+    text-align: justify;
+    padding: 40px 80px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+  }
+/* Fin de la barre de navigation */
+
+/* Header */
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+header h1{
+  font-size: 50px;
+  max-width: 500px;
+  text-align:center;
+}
+header button{
+  padding: 15px 20px;
+  font-size: 20px;
+  border:none;
+  border-radius: 5px;
+  outline:none;
+  cursor:pointer;
+}
+/* Fin du header */
+
+/* Section principale */
+
+.main{
+  margin: 20px;
+  margin-top: 80px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+/* Toutes les cartes */
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+}
+.cards .card{
+  margin-right: 20px;
+  cursor:pointer;
+
+}
+.cards .card img{
+  width: 350px;
+}
+.cards .card .card-header{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+.cards .card .card-body p{
+  margin-top: -10px;
+}
+/* Fin de toutes les cartes */
+
+/* Video de présentation */
+.main .video{
+  margin-top: 80px;
+  width: 90%;
+}
+.main .video iframe{
+  border:none;
+  border-radius: 10px;
+  width: 100%;
+  height: 400px;
+}
+/* Fin de la vidéo de présentation */
+/* Fin de la section principale */
+
+/* Pied de page */
+footer {
+  margin-top: 100px;
+  background-color: #000;
+  padding: 30px;
+  color: #fff;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+footer .social-media{
+  display: flex;
+}
+footer .social-media p{
+  margin-right: 15px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  padding: 5px;
+  text-align:center;
+  width: 20px;
+  cursor:pointer;
+}
+/* Fin du pied de page */
+
+@media screen and (max-width: 640px){
+  nav .onglets .link, nav h1{
+    display:none;
+  }
+  .cards .card img{
+    width: 300px;
+  }
+}
+
+.form{
+    padding: 5%;
+    text-align: center;
+}
+.cartea{
+    text-align: center;
+}
+.commande{
+    text-align: center;
+}
